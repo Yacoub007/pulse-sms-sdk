@@ -1,0 +1,40 @@
+{
+  "name": "@yacoub007/pulse-sms-sdk",
+  "version": "1.0.0",
+  "description": "Enterprise TypeScript & Node.js client SDK for Pulse-SMS Gateway (SMS Mauritanie +222 & WhatsApp Business)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yacoub007/pulse-sms-sdk.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test --experimental-strip-types src/index.test.ts",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "sms",
+    "otp",
+    "whatsapp",
+    "sdk",
+    "mauritanie",
+    "pulse-gateway",
+    "github-packages"
+  ],
+  "author": "Yacoub007 <contact@souq.mr>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
